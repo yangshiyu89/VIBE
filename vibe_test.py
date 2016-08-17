@@ -57,8 +57,7 @@ def vibe_detection(I_gray, samples, _min, N, R):
                 segMap[i, j] = 255
     return segMap, samples
     
-    
-rootDir = r'data'
+rootDir = r'data/input'
 image_file = os.path.join(rootDir, os.listdir(rootDir)[0])
 image = cv2.imread(image_file, 0)
 
