@@ -36,7 +36,6 @@ def vibe_detection(I_gray, samples, _min, N, R):
                     count += 1
                 index += 1
             if count >= _min:
-#                segMap[i,j] = 0
                 r = np.random.randint(0, N-1)
                 if r == 0:
                     r = np.random.randint(0, N-1)
@@ -79,4 +78,3 @@ for lists in os.listdir(rootDir)[300:]:
     if cv2.waitKey(1) and 0xff == ord('q'):
         break
 cv2.destroyAllWindows()
-
