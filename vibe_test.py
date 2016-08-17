@@ -68,7 +68,7 @@ phai = 16
 
 samples = initial_background(image, N)
 
-for lists in os.listdir(rootDir)[300:]: 
+for lists in os.listdir(rootDir): 
     path = os.path.join(rootDir, lists)
     frame = cv2.imread(path)
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
